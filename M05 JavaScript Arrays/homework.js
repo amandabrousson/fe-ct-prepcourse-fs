@@ -22,7 +22,7 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   return array.map((num) => {return num + 1});
+   return array.map(function(num){return num + 1});
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {

@@ -165,13 +165,10 @@ function esPrimo(num) {
       return false;
    }
    for (i=2; i < num; i++){
-      if(num%i === 0){
+      if(num % i=== 0){
          return false;
-      }
-   }
-return true; 
-}
-
+      } }
+      return true; }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
