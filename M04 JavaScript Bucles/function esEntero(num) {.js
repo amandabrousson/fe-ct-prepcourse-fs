@@ -5,9 +5,5 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
-   if (num % 1 === 0 && num >= 0 || num <= 0 ){
-      console.log('true');
-   } else 
-      console.log('false');
+   jj
 }
-esEntero(10.8);

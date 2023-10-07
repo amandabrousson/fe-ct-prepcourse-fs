@@ -8,11 +8,13 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if (num > 0) {
+   if(num > 0){
       return 'Es positivo';
-   } else if (num < 0) {
+   } else if(num < 0){
       return 'Es negativo';
-   } else return false;
+      } else {
+          return false;
+      }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -33,7 +35,7 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return 'Hola ' + nombre + '!'; 
+   return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -52,14 +54,14 @@ function retornarPerimetro(lado) {
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
-      return ((base * altura)/2);
+   return ((base * altura)/2);
 }
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return euro * 1.20;
+   return (euro * 1.20);
 }
 
 function esVocal(letra) {
@@ -67,14 +69,14 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if(letra.lenght>1){
-      return 'Dato incorrecto';
-   } else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+   if(letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
       return 'Es vocal';
-   } else {
+   } else if(letra.length > 1){
+      return 'Dato incorrecto';
+   } else{
       return 'Dato incorrecto';
    }
-   }
+}
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
