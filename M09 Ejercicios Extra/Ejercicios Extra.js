@@ -120,6 +120,28 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+   let narray=[];
+   if(array1.length > array2.length){
+      for(let i = 0; i < array1.length; i++){
+         for(let j = 0; j < array2.length; j++){
+            if(array[i] === array2[j]){
+               narray.push(array1[i]);
+            }
+         }
+      }
+   } else if(array1.length < array2.length){
+      for(let i = 0; i < array2.length; i++){
+         for (let j = 0; j < array1.length; j++){
+            if(array2[i] === array1[j]){
+               narray.push(array1[j]);
+            }
+         }
+      }
+   }
+   if(narray.length === 0){
+      return[];
+   }
+   return narray;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
